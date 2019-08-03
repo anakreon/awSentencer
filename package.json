@@ -5,6 +5,7 @@
     "main": "lib/index.js",
     "scripts": {
         "start": "webpack-dev-server --mode development",
+        "build": "webpack",
         "format": "prettier --write \"src/**/*.jsx\"",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
@@ -25,15 +26,28 @@
     },
     "homepage": "https://github.com/anakreon/awSentencer#readme",
     "dependencies": {
+        "@material/react-button": "^0.15.0",
+        "@material/react-card": "^0.15.0",
+        "@material/react-icon-button": "^0.15.0",
+        "@material/react-layout-grid": "^0.15.0",
+        "@material/react-linear-progress": "^0.15.0",
+        "@material/react-material-icon": "^0.15.0",
+        "@material/react-text-field": "^0.15.0",
+        "@material/react-top-app-bar": "^0.15.0",
+        "@material/react-typography": "^0.15.0",
         "react": "^16.8.6",
         "react-dom": "^16.8.6"
     },
     "devDependencies": {
         "@babel/core": "^7.5.5",
+        "@babel/plugin-proposal-class-properties": "^7.5.5",
         "@babel/preset-env": "^7.5.5",
         "@babel/preset-react": "^7.0.0",
-        "@babel/plugin-proposal-class-properties": "^7.5.5",
         "babel-loader": "^8.0.6",
+        "css-loader": "^3.1.0",
+        "less": "^3.9.0",
+        "less-loader": "^5.0.0",
+        "style-loader": "^0.23.1",
         "webpack": "^4.39.1",
         "webpack-cli": "^3.3.6",
         "webpack-dev-server": "^3.7.2"
