@@ -5,8 +5,6 @@
     "main": "lib/index.js",
     "scripts": {
         "start": "webpack-dev-server --mode development",
-        "build": "webpack",
-        "format": "prettier --write \"src/**/*.jsx\"",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
@@ -35,8 +33,12 @@
         "@material/react-text-field": "^0.15.0",
         "@material/react-top-app-bar": "^0.15.0",
         "@material/react-typography": "^0.15.0",
+        "prop-types": "^15.7.2",
         "react": "^16.8.6",
-        "react-dom": "^16.8.6"
+        "react-dom": "^16.8.6",
+        "react-redux": "^7.1.0",
+        "redux": "^4.0.4",
+        "redux-thunk": "^2.3.0"
     },
     "devDependencies": {
         "@babel/core": "^7.5.5",

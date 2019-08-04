@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Card, {
     CardPrimaryContent,
     CardActions,
@@ -9,30 +9,35 @@ import {
     Headline6,
     Body1
 } from '@material/react-typography';
+import PropTypes from 'prop-types';
 
-export class SentenceCard extends Component {
-    constructor(props) {
-        super(props);
-    }
-    render() {
-        return (
-            <Card className="mdc-card">
-                <CardPrimaryContent>
-                    <div>
-                        <Headline6 className="headline">
-                            {this.props.headline}
-                        </Headline6>
-                        <Body1 className="text">
-                            {this.props.children}
-                        </Body1>
-                    </div>
-                </CardPrimaryContent>
-                <CardActions>
-                    <CardActionButtons>
-                        <Button onClick={this.props.onButtonClick}>{this.props.buttonLabel}</Button>
-                    </CardActionButtons>
-                </CardActions>
-            </Card>
-        );
-    }
+const SentenceCard = ({ headline, children, buttonLabel, onButtonClick }) => {
+    return (
+        <Card className="mdc-card">
+            <CardPrimaryContent>
+                <div>
+                    <Headline6 className="headline">
+                        {headline}
+                    </Headline6>
+                    <Body1 className="text">
+                        {children}
+                    </Body1>
+                </div>
+            </CardPrimaryContent>
+            <CardActions>
+                <CardActionButtons>
+                    <Button onClick={onButtonClick}>{buttonLabel}</Button>
+                </CardActionButtons>
+            </CardActions>
+        </Card>
+    );
 }
+
+SentenceCard.propTypes = {
+    headline: PropTypes.string.isRequired,
+    children: PropTypes.element.isRequired,
+    buttonLabel: PropTypes.string.isRequired,
+    onButtonClick: PropTypes.func.isRequired
+};
+
+export default SentenceCard;

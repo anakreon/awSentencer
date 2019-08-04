@@ -1,15 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import LinearProgress from '@material/react-linear-progress';
+import PropTypes from 'prop-types';
 
-export class ProgressBar extends Component {
-    constructor(props) {
-        super(props);
-    }
-    render() {
-        return (
-            <LinearProgress
-                progress={0.4}
-            />
-        );
-    }
-}
+const ProgressBar = ({ progress }) => {
+    return (
+        <LinearProgress
+            progress={progress}
+        />
+    );
+};
+
+ProgressBar.propTypes = {
+    progress: PropTypes.number.isRequired
+};
+
+export default ProgressBar;
