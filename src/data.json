@@ -1,0 +1,9 @@
+{
+    "questions": {
+        "who": "Who?",
+        "what": "What?",
+        "when": "When?",
+        "where": "Where?"
+    },
+    "sentenceOrder": ["who", "what", "where", "when"]
+}

@@ -6,6 +6,7 @@ import Questionnaire from './questionnaire';
 import SentencePrinter from './sentencePrinter';
 
 class App extends Component {
+    appName = 'Sentencer';
     constructor (props) {
         super(props);
         this.openGithubPage = this.openGithubPage.bind(this);
@@ -18,7 +19,7 @@ class App extends Component {
             <React.Fragment>
                 <TopAppBar>
                     <TopAppBarContents
-                        appName="Sentencer"
+                        appName={this.appName}
                         onIconClick={this.openGithubPage}>
                     </TopAppBarContents>
                 </TopAppBar>

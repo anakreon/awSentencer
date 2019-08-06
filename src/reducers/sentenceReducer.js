@@ -1,6 +1,7 @@
 import { PRINT_SENTENCE, RESET } from '../actions/types';
+import * as data from '../data.json';
 
-const sentenceOrder = ['who', 'what', 'where', 'when'];
+const sentenceOrder = data.sentenceOrder;
 
 const buildSentence = (answers) => {
     return sentenceOrder

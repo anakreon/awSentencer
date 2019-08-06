@@ -1,10 +1,5 @@
-const initialState = {
-    who: 'Who?',
-    what: 'What?',
-    when: 'When?',
-    where: 'Where?'
-};
+import * as data from '../data.json';
 
-export default function (state = initialState) {
+export default function (state = data.questions) {
     return state;
 };
