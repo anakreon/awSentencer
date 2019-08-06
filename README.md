@@ -1,10 +1,23 @@
 # awSentencer
 
 An application using React components to build a sentence.
+User will answer a set of sequentially given questions. Answers to these questions will then be composed in a sentence.
 
-## Versioning
+### Installing
 
-We use [SemVer](http://semver.org/) for versioning.
+- use ```npm install``` to install all project-specific dependencies
+- run ```npm start``` to start a local development server
+
+## Deployment
+
+- ```npm run build``` will create a production version of the project in 'dist' folder
+- to deploy using 'rsync', configure 'src/environments/serversettings.json' and run ```npm run deploy``` to deploy
+
+## Built With
+
+* [React](https://reactjs.org/) - UI Library
+* [Redux](https://redux.js.org/) - State Management
+* [Material Design](https://material.io/develop/) - Component Library
 
 ## Authors
 

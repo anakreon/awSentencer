@@ -8,11 +8,11 @@ module.exports = function() {
         entry: path.resolve('src/index.js'),
         output: {
             filename: 'bundle.js',
-            path: path.resolve('public'),
+            path: path.resolve('dist'),
             publicPath: '/'
         },
         devServer: {
-            contentBase: path.resolve('public')
+            contentBase: path.resolve('dist')
         },
         devtool: 'inline-source-map',
         module: {
